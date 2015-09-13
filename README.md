@@ -37,6 +37,22 @@ Template.JoshTemplate.onCreated(function(){
 
 ```
 
+## Create blaze attribute helper 
+```
+Template.JoshTemplate.helpers({
+  atts: function JoshTplAtts() {
+    var val, Attributes = {}, context = this;
+    for (var prop in context) {
+      val = context[prop];
+          if (!_.isArray(val) && !_.isObject(val)) {
+             Attributes[prop] = val;
+          }
+        }
+      return Attributes;
+    }
+});
+```
+
 ### Activate josh
 ```
 Template.JoshTemplate.onRendered(function(){
