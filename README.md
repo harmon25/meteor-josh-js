@@ -1,13 +1,12 @@
 # meteor-josh-js
 [Josh.js](https://sdether.github.io/josh.js/) (Java Online-Shell) Meteor Package
-* Thanks to [sdether](https://github.com/sdether/josh.js) for creating josh.js
+* Many thanks to [sdether](https://github.com/sdether/josh.js) for creating josh.js :)
 
-## Usage
-* Provides Josh object to client Globablly
+# Usage
+* Provides Josh object to client globablly
 
 ## Blaze Template
-* Can encapsulate josh within a blaze template 
-
+### Encapsulate Josh within a blaze template 
 ```
 <template name="JoshTemplate">
 	<div id="{{atts.panelid}}" class="shell-panel" >
@@ -16,7 +15,7 @@
 	</div>
 </template>
 ```
-###Initialize josh 
+### Initialize Josh 
 ```
 Template.JoshTemplate.onCreated(function(){
   var history = Josh.History();
@@ -29,7 +28,11 @@ Template.JoshTemplate.onCreated(function(){
                   prompt: this.data.prompt
                   }
    jShell = new Josh.Shell(jShellConfig);
-   ....
+   
+   // Set commandHandlers & optionally configure pathhandler(s)
+   ...
+   ...
+
 });
 
 ```

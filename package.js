@@ -1,6 +1,6 @@
 Package.describe({
   name: 'harmon:meteor-josh-js',
-  version: '0.0.1',
+  version: '1.0.0',
   // Brief, one-line summary of the package.
   summary: 'Meteor Package for josh.js',
   // URL to the Git repository containing the source code for this package.
