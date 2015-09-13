@@ -7,7 +7,7 @@
 
 ## Blaze Template
 ### Encapsulate Josh within a blaze template 
-```
+```html
 <template name="JoshTemplate">
 	<div id="{{atts.panelid}}" class="shell-panel" >
 		<div id="{{atts.viewid}}" class="shell-view">
@@ -16,7 +16,7 @@
 </template>
 ```
 ### Initialize Josh 
-```
+```javascript
 Template.JoshTemplate.onCreated(function(){
   var history = Josh.History();
   var killring = new Josh.KillRing();
@@ -38,7 +38,7 @@ Template.JoshTemplate.onCreated(function(){
 ```
 
 ## Create blaze attribute helper 
-```
+```javascript
 Template.JoshTemplate.helpers({
   atts: function JoshTplAtts() {
     var val, Attributes = {}, context = this;
@@ -54,7 +54,7 @@ Template.JoshTemplate.helpers({
 ```
 
 ### Activate josh
-```
+```javascript
 Template.JoshTemplate.onRendered(function(){
   jShell.activate()
 });
@@ -62,6 +62,6 @@ Template.JoshTemplate.onRendered(function(){
 ```
 
 ### Use blaze template anywhere
-```
+```html
 {{> JoshTemplate viewid="shell-view" panelid="shell-panel" prompt="jsh$"}}
 ```
