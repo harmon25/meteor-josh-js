@@ -2,9 +2,9 @@ Package.describe({
   name: 'harmon:meteor-josh-js',
   version: '0.0.1',
   // Brief, one-line summary of the package.
-  summary: '',
+  summary: 'Meteor Package for josh.js',
   // URL to the Git repository containing the source code for this package.
-  git: '',
+  git: 'https://github.com/harmon25/meteor-josh-js',
   // By default, Meteor will default to using README.md for documentation.
   // To avoid submitting documentation, set this field to null.
   documentation: 'README.md'

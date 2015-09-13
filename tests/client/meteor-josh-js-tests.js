@@ -1,5 +1,5 @@
 // Write your tests here!
 // Here is an example.
-Tinytest.add('is shell loaded', function (test) {
-  test.isNotUndefined(Shell, 'Shell');
+Tinytest.add('Josh object should be globablly accessible', function (test) {
+  test.isNotUndefined(Josh, 'Josh');
 });
