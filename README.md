@@ -9,6 +9,7 @@
 ### Encapsulate Josh within a blaze template 
 ```html
 <template name="JoshTemplate">
+<!--atts template helper needs to be created -->
 	<div id="{{atts.panelid}}" class="shell-panel" >
 		<div id="{{atts.viewid}}" class="shell-view">
 		</div>
