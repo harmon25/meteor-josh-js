@@ -15,7 +15,7 @@ Package.onUse(function(api) {
   api.use('underscore');
   api.use('jquery');
   api.addFiles(['client/history.js','client/killring.js','client/readline.js','client/input.js','client/shell.js', 'client/pathhandler.js'], 'client');
-  api.export('Shell', 'client')
+  api.export('Josh', 'client')
 });
 
 Package.onTest(function(api) {
