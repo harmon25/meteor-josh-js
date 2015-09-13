@@ -14,7 +14,7 @@ Package.onUse(function(api) {
   api.versionsFrom('1.1.0.3');
   api.use('underscore');
   api.use('jquery');
-  api.addFiles(['client/history.js','client/killring.js','client/readline.js','client/input.js','client/shell.js', 'client/pathhandler.js', 'client/meteor-josh-js.js'], 'client');
+  api.addFiles(['client/history.js','client/killring.js','client/readline.js','client/input.js','client/shell.js', 'client/pathhandler.js'], 'client');
   api.export('Shell', 'client')
 });
 
